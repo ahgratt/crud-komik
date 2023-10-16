@@ -4,8 +4,15 @@
     <div class="row">
         <div class="col">
             <table class="table">
+                <a href="/komik/create" class="btn btn-primary mt-3">Tamabah Data Komik</a>
                 <h1 class='mt-2'>Daftar Komik</h1>
-                <a href="/komik/create" class="btn btn-primary">Tamabah Data Komik</a>
+                <?php
+                if (session()->getFlashdata('pesan')):
+                    ?>
+                    <div class="alert alert-success" role="alert">
+                        <?= session()->getFlashdata('pesan'); ?>
+                    </div>
+                <?php endif; ?>
                 <thead>
                     <tr>
                         <th scope="col">No</th>
