@@ -6,10 +6,10 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
-    }
-    public function coba()
-    {
-        echo "hallo word";
+        if (!session()->has('logged_in')) {
+            // Jika belum login, arahkan ke halaman login
+            return redirect()->to('/login');
+        }
+        return view('komik/index');
     }
 }

@@ -10,9 +10,8 @@ class KomikModel extends Model
     protected $table = 'komik';
     // Dates
     protected $useTimestamps = true;
-    protected $useAutoIncrement = true;
     protected $allowedFields = ['judul', 'slug', 'penulis', 'penerbit', 'sampul'];
-    // protected $allowedFields = ['judul', 'slug', 'penulis', 'penerbit', 'sampul'];
+
     public function getKomik($slug = false)
     {
         if ($slug == false) {
