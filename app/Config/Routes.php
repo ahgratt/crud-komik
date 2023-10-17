@@ -8,6 +8,8 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('login', 'Login::index');
 $routes->post('login', 'Login::process');
+$routes->get('register', 'Register::index');
+$routes->post('register', 'Register::process');
 // $routes->get('/komik/index', 'Komik::index');
 $routes->setAutoRoute(true);
 $routes->get('/komik/create', 'Komik::create');

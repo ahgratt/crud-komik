@@ -9,7 +9,7 @@ class Pages extends BaseController
         $data = [
             'title' => 'Home | tugasCi4'
         ];
-        return view('pages/home', $data);
+        return view('pages/index', $data);
     }
     public function about()
     {

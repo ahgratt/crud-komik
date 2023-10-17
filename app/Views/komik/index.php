@@ -24,7 +24,9 @@
                     foreach ($komik as $k):
                         ?>
                         <tr>
-                            <th scope="row">1</th>
+                            <th scope="row">
+                                <?= $k['id'] ?>
+                            </th>
                             <td><img src="img/<?= $k['sampul'] ?>" class="sampul"></td>
                             <td>
                                 <?= $k['judul'] ?>

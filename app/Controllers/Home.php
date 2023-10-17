@@ -10,6 +10,6 @@ class Home extends BaseController
             // Jika belum login, arahkan ke halaman login
             return redirect()->to('/login');
         }
-        return view('komik/index');
+        return view('auth/index');
     }
 }
